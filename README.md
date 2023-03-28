@@ -39,12 +39,36 @@ Data terdiri dari 9 dataset dengan skema seperti berikut.
 
 ***
 ## **Analytics**
-
-![Tableau Dashboard](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/Tableau%20Dashboard.png)
-<br>
-<br>
 Visualisasi Tableau dapat dilihat pada link berikut : [Tableau Dashboard](https://public.tableau.com/app/profile/hari.prasetyo/viz/FinalProject_16797569810040/Dashboard1)
+<br>
+<br>
 
+![Tableau Dashboard 1](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/Tableau%201.png)
+<br>
+<br>
+
+#### Sales Overview
+Jumlah order mengalami peningkatan dari tahun 2016 sampai 2018. Hal ini menunjukkan perusahaan Olist berkembang dengan baik. Jumlah order terbanyak terdapat pada November 2017 yaitu sebanyak 7188. Olist Ecommerce sendiri baru didirikan pada tahun 2015 . Artinya sebagai Ecommerce yang baru berdiri dan mengalami perkembangan yang cukup cepat dari tahun 2016-2018 menunjukkan bahwa Olist Ecommerce sudah cukup baik dalam menjangkau konsumen. Total Sales tahun 2018 mencapai R$ 11,113,007, **meningkat 20,4%** dari tahun 2017 walaupun tahun 2018 belum selesai.
+
+Ref: https://www.crunchbase.com/organization/olist
+
+<br>
+<br>
+
+![Tableau Dashboard 2](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/Tableau%202.png)
+
+#### Kategoti Produk
+Top 5 kategori produk berdasarkan jumlah penjualan berbeda dengan apabila berdasarkan quantity penjualannya. Artinya, Olist Ecommerce dapat menyesuaikan kategori produk yang ingin ditingkatkan sesuai dengan tujuannya (apakah meningkatkan quantity ataupun jumlah penjualan). Hal yang dapat dilakukan misalnya dengan memperbanyak variasi barang yang ditawarkan pada kategori-kategori tersebut dan juga bisa dengan memperbanyak merchant yang berkualitas di kategori produk tersebut
+ Hal ini juga dapat meningkatkan Brand Image dari Olist Ecommerce sendiri, sehingga Olist Ecommerce dapat lebih dikenal dan meningkatkan penjualannya.
+
+#### Waktu Transaksi
+Jumlah transaksi tertinggi dimulai dari jam 10 pagi hingga jam 4 sore dan kemudian menurun. Jumlah order kembali naik pada jam 8 hingga jam 10 malam. Hal tersebut disebabkan pada jam tersebut orang-orang mulai aktif melakukan kegiatannya, termasuk berbelanja online. sedangkan pada jam 1 hingga jam 6 pagi adalah jumlah transaksi terendah disebabkan orang-orang sedang beristirahat.
+<br>
+<br>
+![Cohort](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/Cohort.png)
+<br>
+<br>
+Berdasarkan hasil cohort analysis di atas yang menggunakan periode bulanan, diperoleh bahwa hanya kurang dari 1% customer yang kembali melakukan transaksi di bulan-bulan berikutnya. Hal ini sejalan dengan analisa pada poin 5.7 dimana mayoritas customer baru pernah bertransaksi sebanyak 1x saja di Olist Ecommerce. Tentunya hal ini perlu diperhatikan oleh Olist Ecommerce. 
 ***
 ## **Customer Segmentation**
 ### Recency, Frequency & Monetary
@@ -53,41 +77,22 @@ Visualisasi Tableau dapat dilihat pada link berikut : [Tableau Dashboard](https:
 
 Berdasarkan segmentasi RFM yang sudah dilakukan, diperoleh 6 segmen dengan 3 segmen yang dominan secara jumlah yaitu Recent Users, Lost Customers, dan Can't Lose Them, sedangkan 3 segmen lainnya yaitu Loyal Customers, About to Sleep, dan Champions jumlah nya tidak dominan. Berikut beberapa rekomendasi yang dapat dilakukan melalui kegiatan pemasaran :
 1. Recent Users <br>
-Jika dilihat dari data historical, Olist Ecommerce kesulitan untuk mempertahankan customernya (terbukti dari frekuensi transaksi dari unique customer mayoritas hanya 1x saja). Segmen Recent Users akan menjadi potensi yang baik bagi Olist Ecommerce dimana customer baru saja melakukan transaksi di Olist Ecommerce. Olist Ecommerce perlu tetap menjaga relationship nya dengan segmen Recent Users ini. Beberapa rekomendasi untuk segment ini yaitu : <br>
-  - Membuat Notification ditujukan untuk segmen ini.
-  - Memberikan rekomendasi barang yang sejenis dengan barang yang telah dibeli.
-  - Berinteraksi dengan Users seperti memberi ucapan selamat hari Raya ataupun yang lainnya.
-  - Menawarkan program loyalitas kepada konsumen.
+Jika dilihat dari data historical, Olist Ecommerce kesulitan untuk mempertahankan customernya (terbukti dari frekuensi transaksi dari unique customer mayoritas hanya 1x saja). Segmen Recent Users akan menjadi potensi yang baik bagi Olist Ecommerce dimana customer baru saja melakukan transaksi di Olist Ecommerce. Olist Ecommerce perlu tetap menjaga relationship nya dengan segmen Recent Users ini. 
 
 2. Lost Customers <br>
-Segmen ini merupakan customer yang churn. Untuk mendapatkan kembali customer ini perlu usaha yang lebih. Beberapa rekomendasi untuk segmen Lost Customers yaitu : <br>
-  - Memberikan promo khusus pada periode tertentu untuk menarik kembali segmen Lost Customers ini, misal dengan memberi voucher diskon saat hari Raya, voucher biaya pengiriman, dll.
-  - Memberi Notification berisi pembelian terakhir yang dilakukan sehingga mengingatkan kembali tentang customer journey di Olist Ecommerce.
+Segmen ini merupakan customer yang churn. Untuk mendapatkan kembali customer ini perlu usaha yang lebih. 
 
 3. Can't Lose Them <br>
-Segmen ini perlu dimonitor dan diberi perlakuan khusus untuk dapat mempertahankannya. Beberapa rekomendasi untuk segmen ini yaitu: <br>
-  - Memberi promo khusus yang bersifat personal kepada segmen ini.
-  - Memberikan rekomendasi barang yang sejenis dengan barang yang telah dibeli dengan lebih banyak pilihan/variasi.
+Segmen ini perlu dimonitor dan diberi perlakuan khusus untuk dapat mempertahankannya.
 
 4. Loyal Customers <br>
-Segmen ini sudah puas dengan produk Olist namun perlu dijaga agar customer merasa dihargai. Beberapa rekomendasi untuk segmen ini yaitu: <br>
- - Memberi voucher khusus ketika mencapai jumlah transaksi tertentu.
- - Membuat kategori customer khusus ketika telah mencapai jumlah transaksi tertentu.
- - Menawarkan program loyalitas kepada konsumen.
+Segmen ini sudah puas dengan produk Olist namun perlu dijaga agar customer merasa dihargai.
 
 5. About To Sleep <br>
-Segmen ini sudah lama tidak melakukan transaksi dan sebentar lagi akan menjadi Lost Customers jika tidak diberi perlakuan apapun. Beberapa rekomendasi untuk segmen ini yaitu : <br>
-  - Memberikan promo khusus pada periode tertentu.
-  - Memberikan rekomendasi barang yang sejenis dengan barang yang telah dibeli.
-  - Membuat Notification untuk menarik dan mengingatkan kembali customer terhadap Olist Ecommerce.
-  - Memanfaatkan momen periode tertentu seperti liburan atau hari Raya.
+Segmen ini sudah lama tidak melakukan transaksi dan sebentar lagi akan menjadi Lost Customers jika tidak diberi perlakuan apapun. 
 
 6. Champions <br>
-Segmen ini merupakan segmen terbaik yang dimiliki Olist Ecommerce sehingga sangat penting sekali untuk menjaga kepercayaan dari segmen ini. Beberapa rekomendasi untuk segmen ini yaitu: <br>
-  - Membuat kategori customer khusus ketika telah mencapai jumlah transaksi tertentu.
-  - Menawarkan program loyalitas kepada konsumen.
-  - Memberi promo khusus yang bersifat personal kepada segmen ini.
-
+Segmen ini merupakan segmen terbaik yang dimiliki Olist Ecommerce sehingga sangat penting sekali untuk menjaga kepercayaan dari segmen ini.
 
 ### KMeans Clustering Using Combined Database and RFM
 ![Cluster](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/Cluster.png)
