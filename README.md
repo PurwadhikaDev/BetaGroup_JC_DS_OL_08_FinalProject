@@ -68,6 +68,7 @@ Jumlah transaksi tertinggi dimulai dari jam 10 pagi hingga jam 4 sore dan kemudi
 ![Cohort](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/Cohort.png)
 <br>
 <br>
+#### Cohort Analysis
 Berdasarkan hasil cohort analysis di atas yang menggunakan periode bulanan, diperoleh bahwa hanya kurang dari 1% customer yang kembali melakukan transaksi di bulan-bulan berikutnya. Hal ini sejalan dengan analisa pada poin 5.7 dimana mayoritas customer baru pernah bertransaksi sebanyak 1x saja di Olist Ecommerce. Tentunya hal ini perlu diperhatikan oleh Olist Ecommerce. 
 ***
 ## **Customer Segmentation**
