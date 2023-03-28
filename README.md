@@ -16,7 +16,7 @@ Dataset ini disediakan oleh Olist, department store terbesar di pasar Brazil. Ol
 
 Bisnis ecommerce tentunya membutuhkan transaksi dari konsumen-konsumennya secara berkelanjutan agar dapat bertahan. Olist Ecommerce perlu mengetahui seperti apa karakteristik dan perilaku dari konsumennya. Dengan demikian, Olist Ecommerce akan dapat menentukan strategi apa yang perlu diambil ke depannya dalam kegiatan pemasarannya.
 
-Segmentasi dan target pasar merupakan salah satu fondasi dasar dalam bisnis Ecommerce. Dengan melakukan prediksi segmentasi pasar, kita dapat mengarahkan strategi kegiatan pemasaran kepada segmen/kelompok konsumen yang disesuaikan dengan karakteristiknya, sehingga kegiatan pemasaran bisa lebih efektif dan efisien. Segmentasi pasar dapat ditinjau dari berbagai sudut pandang, seperti kemampuan bayar, demografi, waktu, dll.
+Segmentasi dan target pasar merupakan salah satu fondasi dasar dalam bisnis Ecommerce. Berdasarkan artikel yang diterbitkan oleh Agenciaeplus, bahwa E-Commerce di Brazil menghabiskan 13% dari revenue-nya untuk kebutuhan pemasaran. Dengan melakukan prediksi segmentasi pasar, kita dapat mengarahkan strategi kegiatan pemasaran kepada segmen/kelompok konsumen yang disesuaikan dengan karakteristiknya, sehingga kegiatan pemasaran bisa lebih efektif dan efisien. Segmentasi pasar dapat ditinjau dari berbagai sudut pandang, seperti kemampuan bayar, demografi, waktu, dll.
 
 **Goals**
 
