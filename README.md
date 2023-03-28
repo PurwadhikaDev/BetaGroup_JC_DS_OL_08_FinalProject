@@ -36,7 +36,120 @@ Evaluasi metrik yang akan digunakan adalah elbow method dan silhouette score. Ke
 Dataset dapat diperoleh di situs [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).<br>
 Data terdiri dari 9 dataset dengan skema seperti berikut.
 ![Olist Data Schema](https://imgur.com/HRhd2Y0.png)
+**Attribute Information**
 
+**olist_customers_dataset.csv**
+
+| Columns Name | Data Type, Length | Description | 
+| -- | -- | -- | 
+| ***customer_id***| object |  ID Customer. (*Key to the orders dataset*)|
+| customer_unique_id | object | ID unik pengidentifikasi customer.| 
+| customer_zip_code_prefix | int64 | Lima digit pertama kode pos (*Format kode pos brazil: XXXXX-XXXX*)| 
+| customer_city  |  object |Nama kota customer| 
+| customer_state |  object |Nama negara bagian customer| 
+
+<br>
+
+**olist_geolocation_dataset.csv**
+
+| Columns Name | Data Type, Length | Description| 
+| -- | -- | -- | 
+| geolocation_zip_code_prefix | int64 |Lima digit pertama kode pos| 
+| geolocation_lat | float64 |Latitude| 
+| geolocation_lng | float64 |Longitude| 
+| geolocation_city |  object |Nama kota| 
+| geolocation_state |  object |Nama negara bagian| 
+
+<br>
+
+**olist_order_items_dataset.csv**
+
+| Columns Name | Data Type, Length | Description | 
+| -- | -- | -- | 
+| order_id  |  object |ID unik setiap order| 
+| order_item_id | int64 | Nomor urut mengidentifikasi jumlah item yang termasuk dalam order yang sama| 
+| product_id  |  object |ID unik setiap produk| 
+| seller_id | object  |ID unik setiap penjual|
+| shipping_limit_date| object  | Tanggal batas pengiriman penjual untuk menangani pesanan ke mitra logistik | 
+| price | float64 |Harga item| 
+| freight_value | float64 |Ongkos kirim (jika satu order memiliki lebih dari satu item, nilai ongkos kirim dibagi antara item)| 
+
+<br>
+
+**olist_order_payments_dataset.csv**
+
+| Columns Name | Data Type, Length | Description | 
+| -- | -- | -- | 
+| order_id  |  object |ID unik setiap order|
+| payment_sequential | int64 |Customer dapat membayar order dengan lebih dari satu metode pembayaran. Ini adalah urutan pembayarannya| 
+| payment_type |  object |Metode pembayaran yang dipilih customer.| 
+| payment_installments | int64 |Jumlah installments yang dipilih customer.| 
+| payment_value  | float64 | transaction value.| 
+
+<br>
+
+**olist_order_reviews_dataset.csv**
+
+| Columns Name | Data Type, Length | Description | 
+| -- | -- | -- | 
+| review_id | object | ID ulasan |
+| order_id | object | ID unik setiap order |
+| review_score |float64 |  Penilaian angka 1 sampai 5 yang diberikan oleh pelanggan pada satisfaction survey| 
+| review_comment_title | object | Judul komentar oleh customer dalam bahasa Portugis |
+| review_comment_message | object |  Isi komentar oleh customer dalam bahasa Portugis |
+| review_creation_date | object| Tanggal pengiriman satisfaction survey kepada customer |
+| review_answer_timestamp | object | Tanggal dan waktu jawaban survei kepuasan oleh customer |
+
+<br>
+
+**olist_orders_dataset.csv**
+
+| Columns Name | Data Type, Length | Description | 
+| -- | -- | -- | 
+| order_id | object |  ID unik setiap order |
+| customer_id | object |  ID Customer|
+| order_status | object |  Status pesanan ('delivered', 'shipped', etc.) |
+| order_purchase_timestamp  | object | Waktu pembelian |
+| order_approved_at | object | Waktu persetujuan pembayaran |
+| order_delivered_carrier_date | object | Tanggal pengiriman pesanan oleh mitra logistik |
+| order_delivered_customer_date | object | Tanggal aktual penerimaan pesanan oleh customer |
+| order_estimated_delivery_date | object | Tanggal perkiraan delivery yang diinformasikan kepada pelanggan pada saat pembelian |
+
+<br>
+
+**olist_products_dataset.csv**
+
+| Columns Name | Data Type, Length | Description | 
+| -- | -- | -- | 
+| product_id | object | ID produk |
+| product_category_name | float64| Nama kategori produk dalam bahasa Portugis |
+| product_name_lenght | float64| Panjang karakter nama produk |
+| product_description_length | float64| Panjang karakter deskripsi produk |
+| product_photos_qty | float64| Jumlah foto produk |
+| product_weight_g |float64 | Berat produk (g)|
+| product_length_cm | float64| Panjang produk (cm) |
+| product_height_cm |float64 | Tinggi produk (cm) |
+| product_width_cm | float64|  Lebar produk (cm) |
+
+<br>
+
+**olist_sellers_dataset.csv**
+
+| Columns Name | Data Type, Length | Description | 
+| -- | -- | -- | 
+| seller_id | object | ID penjual |
+| seller_zip_code_prefix | int64 | Lima digit pertama kode pos penjual |
+| seller_city | object | Kota penjual |
+| seller_state | object | Negara bagian penjual |
+
+<br>
+
+**product_category_name_translation.csv**
+
+| Columns Name | Data Type, Length | Description | 
+| -- | -- | -- | 
+| product_category_name | object | Nama kategori produk dalam bahasa Portugis |
+| product_category_name_english | object | Nama kategori produk dalam bahasa Inggris |
 ***
 ## **Analytics**
 Visualisasi Tableau dapat dilihat pada link berikut : [Tableau Dashboard](https://public.tableau.com/app/profile/hari.prasetyo/viz/FinalProject_16797569810040/Dashboard1)
