@@ -31,10 +31,71 @@ Beberapa metode analitik yang akan digunakan yaitu pertama melakukan analisis RF
 
 Evaluasi metrik yang akan digunakan adalah elbow method dan silhouette score. Kedua metode tersebut digunakan untuk melihat berapa jumlah cluster yang optimal untuk clustering. Elbow method dapat melihat perubahan tingkat kemiripan setiap penambahan satu cluster. Jumlah cluster yang dipilih adalah jumlah cluster dimana tingkat kemiripan clusternya berubah dari perubahan yang signifikan menjadi tidak signifikan. Pada grafik Elbow Method dapat dilihat pada titik yang membentuk siku. Sedangkan Silhouette score pada dasarnya suatu ukuran yang mengkombinasikan seberapa dekat setiap data poin dalam suatu cluster yang sama dengan seberapa dekat setiap data poin pada cluster tersebut dengan data poin pada cluster lainnya. Jumlah cluster yang dipilih adalah yang memiliki nilai shilouete paling tinggi.
 ***
+
 ## **Data Understanding**
 Dataset dapat diperoleh di situs [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).<br>
 Data terdiri dari 9 dataset dengan skema seperti berikut.
 ![Olist Data Schema](https://imgur.com/HRhd2Y0.png)
 
+***
+## **Analytics**
 
-![Olist Data Schema](https://drive.google.com/file/d/1aFm_rMFaOtVehg0czPiAuXCKbQd9-ag6/view?usp=sharing)
+![Tableau Dashboard](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/Tableau%20Dashboard.png)
+<br>
+<br>
+Visualisasi Tableau dapat dilihat pada link berikut : [Tableau Dashboard](https://public.tableau.com/app/profile/hari.prasetyo/viz/FinalProject_16797569810040/Dashboard1)
+
+***
+## **Customer Segmentation**
+### Recency, Frequency & Monetary
+
+![RFM](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/RFM.png)
+
+Berdasarkan segmentasi RFM yang sudah dilakukan, diperoleh 6 segmen dengan 3 segmen yang dominan secara jumlah yaitu Recent Users, Lost Customers, dan Can't Lose Them, sedangkan 3 segmen lainnya yaitu Loyal Customers, About to Sleep, dan Champions jumlah nya tidak dominan. Berikut beberapa rekomendasi yang dapat dilakukan melalui kegiatan pemasaran :
+1. Recent Users <br>
+Jika dilihat dari data historical, Olist Ecommerce kesulitan untuk mempertahankan customernya (terbukti dari frekuensi transaksi dari unique customer mayoritas hanya 1x saja). Segmen Recent Users akan menjadi potensi yang baik bagi Olist Ecommerce dimana customer baru saja melakukan transaksi di Olist Ecommerce. Olist Ecommerce perlu tetap menjaga relationship nya dengan segmen Recent Users ini. Beberapa rekomendasi untuk segment ini yaitu : <br>
+  - Membuat Notification ditujukan untuk segmen ini.
+  - Memberikan rekomendasi barang yang sejenis dengan barang yang telah dibeli.
+  - Berinteraksi dengan Users seperti memberi ucapan selamat hari Raya ataupun yang lainnya.
+  - Menawarkan program loyalitas kepada konsumen.
+
+2. Lost Customers <br>
+Segmen ini merupakan customer yang churn. Untuk mendapatkan kembali customer ini perlu usaha yang lebih. Beberapa rekomendasi untuk segmen Lost Customers yaitu : <br>
+  - Memberikan promo khusus pada periode tertentu untuk menarik kembali segmen Lost Customers ini, misal dengan memberi voucher diskon saat hari Raya, voucher biaya pengiriman, dll.
+  - Memberi Notification berisi pembelian terakhir yang dilakukan sehingga mengingatkan kembali tentang customer journey di Olist Ecommerce.
+
+3. Can't Lose Them <br>
+Segmen ini perlu dimonitor dan diberi perlakuan khusus untuk dapat mempertahankannya. Beberapa rekomendasi untuk segmen ini yaitu: <br>
+  - Memberi promo khusus yang bersifat personal kepada segmen ini.
+  - Memberikan rekomendasi barang yang sejenis dengan barang yang telah dibeli dengan lebih banyak pilihan/variasi.
+
+4. Loyal Customers <br>
+Segmen ini sudah puas dengan produk Olist namun perlu dijaga agar customer merasa dihargai. Beberapa rekomendasi untuk segmen ini yaitu: <br>
+ - Memberi voucher khusus ketika mencapai jumlah transaksi tertentu.
+ - Membuat kategori customer khusus ketika telah mencapai jumlah transaksi tertentu.
+ - Menawarkan program loyalitas kepada konsumen.
+
+5. About To Sleep <br>
+Segmen ini sudah lama tidak melakukan transaksi dan sebentar lagi akan menjadi Lost Customers jika tidak diberi perlakuan apapun. Beberapa rekomendasi untuk segmen ini yaitu : <br>
+  - Memberikan promo khusus pada periode tertentu.
+  - Memberikan rekomendasi barang yang sejenis dengan barang yang telah dibeli.
+  - Membuat Notification untuk menarik dan mengingatkan kembali customer terhadap Olist Ecommerce.
+  - Memanfaatkan momen periode tertentu seperti liburan atau hari Raya.
+
+6. Champions <br>
+Segmen ini merupakan segmen terbaik yang dimiliki Olist Ecommerce sehingga sangat penting sekali untuk menjaga kepercayaan dari segmen ini. Beberapa rekomendasi untuk segmen ini yaitu: <br>
+  - Membuat kategori customer khusus ketika telah mencapai jumlah transaksi tertentu.
+  - Menawarkan program loyalitas kepada konsumen.
+  - Memberi promo khusus yang bersifat personal kepada segmen ini.
+
+
+### KMeans Clustering Using Combined Database and RFM
+![Cluster](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/Cluster.png)
+***
+
+## Conclusion
+
+
+## Recommendation
+
+
