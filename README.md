@@ -63,6 +63,9 @@ Top 5 kategori produk berdasarkan jumlah penjualan berbeda dengan apabila berdas
 
 #### Waktu Transaksi
 Jumlah transaksi tertinggi dimulai dari jam 10 pagi hingga jam 4 sore dan kemudian menurun. Jumlah order kembali naik pada jam 8 hingga jam 10 malam. Hal tersebut disebabkan pada jam tersebut orang-orang mulai aktif melakukan kegiatannya, termasuk berbelanja online. sedangkan pada jam 1 hingga jam 6 pagi adalah jumlah transaksi terendah disebabkan orang-orang sedang beristirahat.
+
+#### Metode Pembayaran
+Jumlah transaksi yang menggunakan metode pembayaran credit card mencapai 73,76%. Hal tersebut sejalan dengan artikel yang diterbitkan oleh [JPMorgan](https://www.jpmorgan.com/merchant-services/insights/reports/brazil), bahwa penggunaan kartu kredit cukup tinggi di Brazil, menunjukkan permintaan yang kuat terhadap kredit konsumen.
 <br>
 <br>
 ![Cohort](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/Cohort.png)
