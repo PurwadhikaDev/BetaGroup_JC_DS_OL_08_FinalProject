@@ -57,7 +57,7 @@ Ref: https://www.crunchbase.com/organization/olist
 
 ![Tableau Dashboard 2](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/Tableau%202.png)
 
-#### Kategoti Produk
+#### Kategori Produk
 Top 5 kategori produk berdasarkan jumlah penjualan berbeda dengan apabila berdasarkan quantity penjualannya. Artinya, Olist Ecommerce dapat menyesuaikan kategori produk yang ingin ditingkatkan sesuai dengan tujuannya (apakah meningkatkan quantity ataupun jumlah penjualan). Hal yang dapat dilakukan misalnya dengan memperbanyak variasi barang yang ditawarkan pada kategori-kategori tersebut dan juga bisa dengan memperbanyak merchant yang berkualitas di kategori produk tersebut
  Hal ini juga dapat meningkatkan Brand Image dari Olist Ecommerce sendiri, sehingga Olist Ecommerce dapat lebih dikenal dan meningkatkan penjualannya.
 
