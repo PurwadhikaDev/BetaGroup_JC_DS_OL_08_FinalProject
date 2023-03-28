@@ -213,11 +213,47 @@ Segmen ini merupakan segmen terbaik yang dimiliki Olist Ecommerce sehingga sanga
 
 ### KMeans Clustering Using Combined Database and RFM
 ![Cluster](https://github.com/PurwadhikaDev/BetaGroup_JC_DS_OL_08_FinalProject/blob/main/Picture/Cluster.png)
+
+- Cluster 0 (Low Spender)<br>
+Seperti sudah dijelaskan sebelumnya cluster ini merupakan cluster dengan jumlah konsumen terbanyak. Cluster ini memiliki rata-rata spending paling kecil dilihat dari Monetary, Price, dan Freight Value. Customer State yang dominan yaitu SP dan Product Category yang dominan yaitu health_beauty. Untuk Payment Installments cluster ini memiliki nilai yang paling kecil juga. Hal ini wajar jika melihat rata-rata spending yang dikeluarkan juga relatif kecil dibanding cluster lainnya, sehingga konsumen tidak membutuhkan jumlah installments yang banyak. Payment type yang dominan yaitu Credit Card. Nilai Recency dari cluster ini adalah yang terbesar dibanding cluster lainnya. 
+
+- Cluster 1 (Big Spender) <br>
+Cluster ini memiliki rata-rata spending paling besar jika dilihat dari Monetary, Price, dan Freight Value. Customer State yang dominan yaitu SP dan Product Category yang dominan yaitu furniture_decor. Untuk Payment Installments cluster ini memiliki nilai yang paling besar. Hal ini wajar jika melihat rata-rata spending yang dikeluarkan juga relatif tinggi dibanding cluster lainnya, sehingga konsumen akan menyukai jumlah installments yang banyak. Payment type yang dominan yaitu Credit Card.  Nilai Recency dari cluster ini adalah yang terkecil dibanding cluster lainnya. 
+
+- Cluster 2 (Medium Spender) <br>
+Cluster ini memiliki rata-rata spending di tengah-tengah jika dilihat dari Monetary, Price, dan Freight Value. Customer State yang dominan yaitu SP dan Product Category yang dominan yaitu furniture_decor. Untuk Payment Installments cluster ini memiliki nilai di tengah-tengah dari ketiga cluster. Payment type yang dominan yaitu Credit Card.  Nilai Recency dari cluster ini adalah di tengah-tengah dari ketiga cluster yang ada. 
 ***
 
 ## Conclusion
+Berdasarkan hasil analisa yang sudah dilakukan, diperoleh bahwa Olist Ecommerce memiliki masalah dimana hanya 97% konsumen yang melakukan transaksi lebih dari 1x. Dari Cohort Analysis juga diperoleh bahwa hanya kurang dari 1% konsumen yang kembali melakukan transaksi di bulan-bulan berikutnya. Hal ini menunjukkan bahwa Retention Customer yang masih minim dan masih terdapat potensi yang besar untuk Olist Ecommerce dapat mengembangkan bisnisnya dengan cara mempertahankan pelanggan yang lama. Berdasarkan informasi dari infografis "Customer Acquisition vs Retention Costs - Statistics And Trends" oleh Khalid [invesp](https://www.invespcro.com/blog/customer-acquisition-retention/), biaya untuk mendapatkan pelanggan baru adalah 5x lebih besar dibanding mempertahankan pelanggan lama serta probabilitas menjual ke pelanggan lama 60-70% sedangkan probabilitas menjual ke pelanggan baru hanya 5-20%. Dengan demikian, Retention Customer perlu menjadi fokus utama dari Olist Ecommerce untuk segera diperbaiki ke depannya.
 
+Selanjutnya berdasarkan modeling yang sudah dilakukan menggunakan 2 metode diperoleh hasil sebagai berikut:
+1. Metode RFM <br>
+Dari Analisis Model RFM, diperoleh 6 segmen dengan 3 segmen yang dominan secara jumlah yaitu Recent Users, Lost Customers, dan Can't Lose Them, sedangkan 3 segmen lainnya yaitu Loyal Customers, About to Sleep, dan Champions jumlah nya tidak dominan. Hal ini berarti bahwa masih terdapat potensi bagi Olist Ecommerce dari segmen Recent Users dan Can't Lose Them.
+2. Clustering KMeans using Combined Databased and RFM <br>
+Dari hasil clustering diperoleh 3 cluster yaitu Big Spender, Medium Spender, dan Low Spender. Mayoritas konsumen didominasi oleh cluster Low Spender. Hal ini dapat menjadi fokus segmen bagi Olist Ecommerce untuk dapat mengembangkan bisnisnya.
+
+Berdasarkan 2 model yang sudah dibuat, kami memilih menggunakan model Kmeans dimana KMeans memiliki kelebihan dibanding RFM yaitu KMeans menggunakan algoritma dalam penentuan cluster nya serta sudah melibatkan berbagai fitur dalam proses clusteringnya, sedangkan model RFM dibuat berdasarkan aturan tertentu yang ditetapkan berdasarkan domain knowledge.
 
 ## Recommendation
 
+Olist Ecommerce perlu memberi perhatian lebih terhadap Retention dari pelanggan lamanya. Berdasarkan segmentasi hasil Clustering KMeans, kami pun memberikan rekomendasi berdasarkan tiap Cluster sebagai berikut:
+- Cluster Low Spender <br>
+  1. Memperbanyak opsi cicilan kartu kredit dengan berbagai macam bank.
+  2. Memberikan voucher promo pada periode tertentu. Misal voucher yang berlaku hanya pada saat hari Nasional / hari Raya tertentu.
+  3. Memberikan voucher gratis/diskon ongkos kirim.
+  4. Berinteraksi dengan Users seperti memberi ucapan selamat hari Raya ataupun yang lainnya.
+  5. Memberi Notification berisi pembelian terakhir yang dilakukan sehingga mengingatkan kembali tentang customer journey di Olist Ecommerce.
 
+- Cluster Big Spender <br>
+  1. Memperbanyak opsi cicilan kartu kredit dengan berbagai macam bank
+  2. Memperbanyak opsi jumlah cicilan
+  3. Memberikan promo cicilan tanpa bunga
+  4. Memberi promo/voucher khusus yang bersifat personal kepada segmen ini.
+  5. Menawarkan program loyalitas kepada konsumen
+
+- Cluster Medium Spender <br>
+  1. Memperbanyak opsi cicilan kartu kredit dengan berbagai macam bank
+  2. Membuat Notification untuk menarik dan mengingatkan kembali customer terhadap Olist Ecommerce.
+  3. Menawarkan program loyalitas kepada konsumen
+  4. Berinteraksi dengan Users seperti memberi ucapan selamat hari Raya ataupun yang lainnya.
